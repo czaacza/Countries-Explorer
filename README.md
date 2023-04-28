@@ -5,5 +5,4 @@
 - cd Countries-Explorer
 - npm install
 - npm start
-
-go to localhost:3000 and enjoy the app
+- visit localhost:3000 and enjoy the app
