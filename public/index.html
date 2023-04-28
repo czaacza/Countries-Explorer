@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Countries Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">Countries Explorer</h1>
+        <h3 class="subtitle">
+          author: <span class="subtitle-author">czaacza</span>
+        </h3>
+      </div>
+      <div id="user-input">
+        <select id="select-region">
+          <option value="" disabled selected>Choose a region</option>
+        </select>
+        <input
+          type="number"
+          id="num-countries"
+          min="2"
+          max="10"
+          placeholder="Choose an amount"
+        />
+        <button id="load-button">Show Countries</button>
+      </div>
+      <div id="progress" style="display: none">Please wait...</div>
+      <ul id="list-countries"></ul>
+      <h3 id="error-message">There are not enough countries for this region</h3>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
